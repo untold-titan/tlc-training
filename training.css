@@ -1,0 +1,16 @@
+/* Contains the main page content */
+
+.card {
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 75vh;
+}
+
+.card-title{
+    width: fit-content;
+    position: relative;
+    top:30px;
+    left:30px;
+}
