@@ -11,7 +11,13 @@
 
 <body>
   <div class="topbar">
-    <img src="/logo.png">
+    <img id="logo" src="/logo.png">
+    <script>
+      //Redirecting to home page
+      document.getElementById("logo").onclick = function(){
+        window.location.href = window.location.origin;
+      };
+    </script>
     <div class="topbar-title">
       <h1>TLC Training & Consulting</h1>
     </div>
@@ -25,7 +31,13 @@
       <img>
       <p>Lorem Ibsum Dolor, blah blah</p>
       <div class="center">
-        <button>About Us</button>
+        <button id="aboutUs">About Us</button>
+        <script>
+          //Redirecting to other pages.
+          document.getElementById("aboutUs").onclick = function(){
+            window.location.href = window.location.origin + "/about-us.html"
+          };
+        </script>
       </div>
     </div>
     <div class="card">
@@ -35,7 +47,13 @@
       <img>
       <p>AUUUUGH</p>
       <div class="center">
-        <button>Training</button>
+        <button id="training">Training</button>
+        <script>
+          //Redirecting to other pages.
+          document.getElementById("training").onclick = function(){
+            window.location.href = window.location.origin + "/training.html"
+          };
+        </script>
       </div>
     </div>
     <div class="card">
@@ -45,7 +63,13 @@
       <img>
       <p>The News goes here</p>
       <div class="center">
-        <button>News</button>
+        <button id="news">News</button>
+        <script>
+          //Redirecting to other pages.
+          document.getElementById("news").onclick = function(){
+            window.location.href = window.location.origin + "/training.html"
+          };
+        </script>
       </div>
     </div>
   </div>
