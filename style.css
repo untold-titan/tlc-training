@@ -127,6 +127,22 @@ p{
   height: 75px;
 }
 
+.hamburger{
+  position: fixed;
+  background-color: darkgrey;
+  width:350px;
+  height: 100vh;
+  right: -350;
+  top:0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.showMenu{
+  right:0;
+}
+
+
 /* Helper Classes */
 
 .center{
