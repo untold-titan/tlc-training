@@ -21,7 +21,27 @@
     <div class="topbar-title">
       <h1>TLC Training & Consulting</h1>
     </div>
-    <button class="nav-button">☰</button>
+    <!-- This button opens the side navigation panel aka the Hamburger. I refer to the actual item as a Hamburger, 
+      and anything that refrences it has burger in it's name. -->
+      <button id="open-burger" class="nav-button">☰</button>
+      <script>
+        document.getElementById("open-burger").onclick = function (){
+          document.getElementById("hamburger").classList.remove("closeBurger")
+          document.getElementById("hamburger").classList.add("openBurger")
+        }
+        </script>
+  </div>
+  <div id="hamburger" class="hamburger">
+    <button id="close-burger" class="nav-button">X</button>
+    <script>
+      document.getElementById("close-burger").onclick = function (){
+        document.getElementById("hamburger").classList.remove("openBurger")
+        document.getElementById("hamburger").classList.add("closeBurger")
+      }
+    </script>
+    <div class="burger-content">
+      <p>So this is the fabled hamburger menu...</p>
+    </div>
   </div>
   <div class="card">
     <div class="card-title">
