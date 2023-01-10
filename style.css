@@ -132,14 +132,51 @@ p{
   background-color: darkgrey;
   width:350px;
   height: 100vh;
-  right: -350;
+  right: -350px;
   top:0;
   overflow: hidden;
   z-index: 10;
+  border: 0;
+  border-left: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+
 }
 
-.showMenu{
+.openBurger{
   right:0;
+  animation-name: openBurgerAni;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.closeBurger{
+  animation-name: closeBurgerAni;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes closeBurgerAni{
+  from{
+    right: 0px;
+  }
+  to{
+    right: -350px;
+  }
+}
+
+@keyframes openBurgerAni{
+  from{
+    right: -350px;
+  }
+  to{
+    right: 0px;
+  }
+}
+
+.burger-content{
+  margin-top: 100px;
 }
 
 
