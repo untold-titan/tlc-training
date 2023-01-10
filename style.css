@@ -117,7 +117,7 @@ p{
   position:fixed;
   left: 0;
   bottom: 0;
-  top: calc(100%- 75px);
+  top: calc(100% - 75px);
   background-color: #D9D9D9;
   border: 0px;
   border-top: 2px;
