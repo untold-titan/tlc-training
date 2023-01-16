@@ -1,6 +1,7 @@
 /* Contains the main page content */
 
 .card {
+    display: flex;
     margin-top: 140px;
     margin-left: auto;
     margin-right: auto;
@@ -13,4 +14,25 @@
     position: relative;
     top:30px;
     left:30px;
+}
+
+.card-content{
+    text-align: left;
+    height: fit-content;
+    width: 66%;
+}
+
+.card-image{
+    height: fit-content;
+    width:33%;
+}
+
+.card-img{
+    margin-top: 25px;
+    width: 450px;
+    height: 300px;
+}
+
+p{
+    text-align: left;
 }
